@@ -8,7 +8,7 @@
 ## Requirements
 
 * iOS 8
-* Swift 1.1
+* Swift 1.2
 
 ## Installation
 
