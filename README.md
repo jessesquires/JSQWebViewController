@@ -4,6 +4,39 @@
 
 *A Swift WebKit view controller for iOS*
 
+
+## Requirements
+
+* iOS 8
+* Swift 1.1
+
+## Installation
+
+#### [CocoaPods](http://cocoapods.org)
+
+````ruby
+use_frameworks!
+
+# For latest release in cocoapods
+pod 'JSQWebViewController'  
+
+# Feeling adventurous? Get the latest on develop
+pod 'JSQWebViewController', :git => 'https://github.com/jessesquires/JSQWebViewController.git', :branch => 'develop'
+````
+
+#### [Carthage](https://github.com/Carthage/Carthage)
+
+````bash
+github "jessesquires/JSQWebViewController"
+````
+
+## Documentation
+
+Read the fucking [docs][docsLink]. Generated with [jazzy](https://github.com/realm/jazzy). Hosted by [GitHub Pages](https://pages.github.com).
+
+More information on the [gh-pages](https://github.com/jessesquires/JSQWebViewController/tree/gh-pages) branch.
+
+
 ## Getting Started
 
 ````swift
