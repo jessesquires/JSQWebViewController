@@ -23,20 +23,29 @@ import JSQWebViewController
 
 class ViewController: UITableViewController {
 
+    let url = NSURL(string: "http://jessesquires.com")!
+
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
-        let webViewController = WebViewController(url: NSURL(string: "http://jessesquires.com")!)
-
         switch indexPath.row {
         case 0:
-            self.navigationController?.pushViewController(webViewController, animated: true)
-            break
+            let webViewController = WebViewController(url: url)
+            navigationController?.pushViewController(webViewController, animated: true)
+
         case 1:
-            break
+            let webViewController = WebViewController(url: url)
+            let nav = UINavigationController(rootViewController: webViewController)
+            presentViewController(nav, animated: true, completion: nil)
+
         default: break
         }
     }
 
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let webViewController = segue.destinationViewController as? WebViewController
+        webViewController?.urlRequest = NSURLRequest(URL: url)
+    }
+    
 }
 

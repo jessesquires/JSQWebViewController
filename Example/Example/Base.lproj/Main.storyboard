@@ -57,7 +57,7 @@
                                             </subviews>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="B4C-HE-uga" kind="show" id="K3C-bD-zgm"/>
+                                            <segue destination="B4C-HE-uga" kind="show" identifier="segue" id="K3C-bD-zgm"/>
                                         </connections>
                                     </tableViewCell>
                                 </cells>
@@ -87,6 +87,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <keyCommands/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="agu-v6-EzM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
