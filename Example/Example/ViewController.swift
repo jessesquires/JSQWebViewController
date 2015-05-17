@@ -18,6 +18,9 @@
 
 import UIKit
 
+import JSQWebViewController
+
+
 class ViewController: UIViewController {
 
 }
