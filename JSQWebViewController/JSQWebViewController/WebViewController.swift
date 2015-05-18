@@ -26,7 +26,7 @@ private let EstimatedProgressKeyPath = "estimatedProgress"
 
 
 ///  An instance of `WebViewController` displays interactive web content.
-public class WebViewController: UIViewController {
+public final class WebViewController: UIViewController {
 
     // MARK: Properties
 
@@ -48,8 +48,9 @@ public class WebViewController: UIViewController {
         }
     }
 
-    private lazy var _webView: WKWebView = { [unowned self] in
+    public var displaysWebViewTitle: Bool = false
 
+    private lazy var _webView: WKWebView = { [unowned self] in
         // FIXME: prevent Swift bug, lazy property initialized twice from `init(coder:)`
         // return existing webView if webView already added
         let views = self.view.subviews.filter {$0 is WKWebView } as! [WKWebView]
@@ -61,6 +62,7 @@ public class WebViewController: UIViewController {
         self.view.addSubview(webView)
         webView.addObserver(self, forKeyPath: TitleKeyPath, options: .New, context: nil)
         webView.addObserver(self, forKeyPath: EstimatedProgressKeyPath, options: .New, context: nil)
+        webView.allowsBackForwardNavigationGestures = true
         return webView
         }()
 
@@ -74,12 +76,14 @@ public class WebViewController: UIViewController {
 
     private let configuration: WKWebViewConfiguration
 
+    private let activities: [UIActivity]?
 
     // MARK: Initialization
 
-    public init(urlRequest: NSURLRequest, configuration: WKWebViewConfiguration = WKWebViewConfiguration()) {
+    public init(urlRequest: NSURLRequest, configuration: WKWebViewConfiguration = WKWebViewConfiguration(), activities: [UIActivity]? = nil) {
         self.configuration = configuration
         self.urlRequest = urlRequest
+        self.activities = activities
         super.init(nibName: nil, bundle: nil)
     }
 
@@ -90,6 +94,7 @@ public class WebViewController: UIViewController {
     public required init(coder aDecoder: NSCoder) {
         self.configuration = WKWebViewConfiguration()
         self.urlRequest = NSURLRequest(URL: NSURL(string: "")!)
+        self.activities = nil
         super.init(coder: aDecoder)
     }
 
@@ -101,32 +106,66 @@ public class WebViewController: UIViewController {
 
     // MARK: View lifecycle
 
+    ///  :nodoc:
     public override func viewDidLoad() {
         super.viewDidLoad()
-        title = urlRequest.URL?.absoluteString
+        title = urlRequest.URL?.host
+
+        if presentingViewController?.presentedViewController != nil {
+            navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: Selector("didTapDoneButton:"))
+        }
+
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: Selector("didTapActionButton:"))
+
         webView.loadRequest(urlRequest)
     }
 
-    public override func viewWillDisappear(animated: Bool) {
-        super.viewWillDisappear(animated)
+    ///  :nodoc:
+    public override func viewWillAppear(animated: Bool) {
+        assert(navigationController != nil, "\(WebViewController.self) must be presented in a \(UINavigationController.self)")
+        super.viewWillAppear(animated)
+    }
+
+    ///  :nodoc:
+    public override func viewDidDisappear(animated: Bool) {
+        super.viewDidDisappear(animated)
         webView.stopLoading()
     }
 
+    ///  :nodoc:
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        self.webView.frame = self.view.bounds
-        self.view.bringSubviewToFront(self.progressBar)
-        self.progressBar.frame = CGRect(x: 0, y: self.topLayoutGuide.length, width: self.view.frame.size.width, height: 2)
+        webView.frame = view.bounds
+        view.bringSubviewToFront(progressBar)
+        progressBar.frame = CGRect(x: 0, y: topLayoutGuide.length, width: view.frame.size.width, height: 2)
+    }
+
+
+    // MARK: Actions
+
+    internal func didTapDoneButton(sender: UIBarButtonItem) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
+
+    internal func didTapActionButton(sender: UIBarButtonItem) {
+        if let url = urlRequest.URL {
+            let activityVC = UIActivityViewController(activityItems: [url], applicationActivities: activities)
+            activityVC.popoverPresentationController?.barButtonItem = sender
+            presentViewController(activityVC, animated: true, completion: nil)
+        }
     }
 
 
     // MARK: KVO
 
+    ///  :nodoc:
     public override func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
         if object as? NSObject == webView {
             switch keyPath {
             case TitleKeyPath:
-                title = webView.title
+                if displaysWebViewTitle {
+                    title = webView.title
+                }
 
             case EstimatedProgressKeyPath:
                 progressBar.setProgress(Float(webView.estimatedProgress), animated: true)
