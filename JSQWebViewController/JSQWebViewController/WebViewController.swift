@@ -30,29 +30,34 @@ public class WebViewController: UIViewController {
 
     // MARK: Properties
 
-    public var webView: WKWebView {
+    ///  Returns the web view for the controller.
+    public final var webView: WKWebView {
         get {
             return _webView
         }
     }
 
-    public var progressBar: UIProgressView {
+    ///  Returns the progress view for the controller.
+    public final var progressBar: UIProgressView {
         get {
             return _progressBar
         }
     }
 
-    public var urlRequest: NSURLRequest {
+    ///  The URL request for the web view. Upon setting this property, the web view immediately begins loading the request.
+    public final var urlRequest: NSURLRequest {
         didSet {
             webView.loadRequest(urlRequest)
         }
     }
 
-    public var displaysWebViewTitle: Bool = false
+    ///  Specifies whether or not to display the web view title as the navigation bar title.
+    ///  The default value is `false`, which sets the navigation bar title to the URL host name of the URL request.
+    public final var displaysWebViewTitle: Bool = false
 
     // MARK: Private properties
 
-    private lazy var _webView: WKWebView = { [unowned self] in
+    private lazy final var _webView: WKWebView = { [unowned self] in
         // FIXME: prevent Swift bug, lazy property initialized twice from `init(coder:)`
         // return existing webView if webView already added
         let views = self.view.subviews.filter {$0 is WKWebView } as! [WKWebView]
@@ -68,7 +73,7 @@ public class WebViewController: UIViewController {
         return webView
         }()
 
-    private lazy var _progressBar: UIProgressView = { [unowned self] in
+    private lazy final var _progressBar: UIProgressView = { [unowned self] in
         let progressBar = UIProgressView(progressViewStyle: .Bar)
         progressBar.backgroundColor = .clearColor()
         progressBar.trackTintColor = .clearColor()
@@ -76,9 +81,9 @@ public class WebViewController: UIViewController {
         return progressBar
         }()
 
-    private let configuration: WKWebViewConfiguration
+    private final let configuration: WKWebViewConfiguration
 
-    private let activities: [UIActivity]?
+    private final let activities: [UIActivity]?
 
     // MARK: Initialization
 
@@ -146,11 +151,11 @@ public class WebViewController: UIViewController {
 
     // MARK: Actions
 
-    internal func didTapDoneButton(sender: UIBarButtonItem) {
+    internal final func didTapDoneButton(sender: UIBarButtonItem) {
         dismissViewControllerAnimated(true, completion: nil)
     }
 
-    internal func didTapActionButton(sender: UIBarButtonItem) {
+    internal final func didTapActionButton(sender: UIBarButtonItem) {
         if let url = urlRequest.URL {
             let activityVC = UIActivityViewController(activityItems: [url], applicationActivities: activities)
             activityVC.popoverPresentationController?.barButtonItem = sender
