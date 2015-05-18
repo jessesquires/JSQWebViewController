@@ -87,6 +87,13 @@ public class WebViewController: UIViewController {
 
     // MARK: Initialization
 
+    ///  Constructs a new `WebViewController`.
+    ///
+    ///  :param: urlRequest    The URL request for the web view to load.
+    ///  :param: configuration The configuration for the web view.
+    ///  :param: activities    The custom activities to display in the `UIActivityViewController` that is presented when the action button is tapped.
+    ///
+    ///  :returns: A new `WebViewController` instance.
     public init(urlRequest: NSURLRequest, configuration: WKWebViewConfiguration = WKWebViewConfiguration(), activities: [UIActivity]? = nil) {
         self.configuration = configuration
         self.urlRequest = urlRequest
@@ -94,6 +101,11 @@ public class WebViewController: UIViewController {
         super.init(nibName: nil, bundle: nil)
     }
 
+    ///  Constructs a new `WebViewController`.
+    ///
+    ///  :param: url The URL to display in the web view.
+    ///
+    ///  :returns: A new `WebViewController` instance.
     public convenience init(url: NSURL) {
         self.init(urlRequest: NSURLRequest(URL: url))
     }
