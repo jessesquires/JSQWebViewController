@@ -26,7 +26,7 @@ private let EstimatedProgressKeyPath = "estimatedProgress"
 
 
 ///  An instance of `WebViewController` displays interactive web content.
-public final class WebViewController: UIViewController {
+public class WebViewController: UIViewController {
 
     // MARK: Properties
 
@@ -49,6 +49,8 @@ public final class WebViewController: UIViewController {
     }
 
     public var displaysWebViewTitle: Bool = false
+
+    // MARK: Private properties
 
     private lazy var _webView: WKWebView = { [unowned self] in
         // FIXME: prevent Swift bug, lazy property initialized twice from `init(coder:)`
@@ -91,6 +93,7 @@ public final class WebViewController: UIViewController {
         self.init(urlRequest: NSURLRequest(URL: url))
     }
 
+    ///  :nodoc:
     public required init(coder aDecoder: NSCoder) {
         self.configuration = WKWebViewConfiguration()
         self.urlRequest = NSURLRequest(URL: NSURL(string: "")!)
@@ -168,9 +171,8 @@ public final class WebViewController: UIViewController {
                 }
 
             case EstimatedProgressKeyPath:
-                progressBar.setProgress(Float(webView.estimatedProgress), animated: true)
                 let completed = webView.estimatedProgress == 1.0
-                progressBar.hidden = completed
+                progressBar.setProgress(completed ? 0.0 : Float(webView.estimatedProgress), animated: !completed)
                 UIApplication.sharedApplication().networkActivityIndicatorVisible = !completed
 
             default: break
