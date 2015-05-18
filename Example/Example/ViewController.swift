@@ -28,14 +28,18 @@ class ViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
+        if indexPath.row == 2 {
+            return
+        }
+
+        let webVC = WebViewController(url: url)
+
         switch indexPath.row {
         case 0:
-            let webViewController = WebViewController(url: url)
-            navigationController?.pushViewController(webViewController, animated: true)
+            navigationController?.pushViewController(webVC, animated: true)
 
         case 1:
-            let webViewController = WebViewController(url: url)
-            let nav = UINavigationController(rootViewController: webViewController)
+            let nav = UINavigationController(rootViewController: webVC)
             presentViewController(nav, animated: true, completion: nil)
 
         default: break
