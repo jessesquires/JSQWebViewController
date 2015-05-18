@@ -2,7 +2,7 @@
 
 [![Version Status](http://img.shields.io/cocoapods/v/JSQWebViewController.png)][docsLink] [![license MIT](http://img.shields.io/badge/license-MIT-orange.png)][mitLink] [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
 
-*A Swift WebKit view controller for iOS*
+*A lightweight Swift WebKit view controller for iOS*
 
 
 ## Requirements
