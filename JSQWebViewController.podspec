@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
    s.name = 'JSQWebViewController'
-   s.version = '1.0.0'
+   s.version = '2.0.0'
    s.license = 'MIT'
-   
+
    s.summary = 'A lightweight Swift WebKit view controller for iOS'
    s.homepage = 'https://github.com/jessesquires/JSQWebViewController'
    s.documentation_url = 'http://jessesquires.com/JSQWebViewController'
