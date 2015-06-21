@@ -11,7 +11,7 @@
 ## Requirements
 
 * iOS 8
-* Swift 1.2
+* Swift 2.0
 
 ## Installation
 
@@ -21,7 +21,7 @@
 use_frameworks!
 
 # For latest release in cocoapods
-pod 'JSQWebViewController'  
+pod 'JSQWebViewController'
 
 # Feeling adventurous? Get the latest on develop
 pod 'JSQWebViewController', :git => 'https://github.com/jessesquires/JSQWebViewController.git', :branch => 'develop'
