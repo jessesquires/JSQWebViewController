@@ -53,7 +53,7 @@ public class WebViewController: UIViewController {
 
     /**
     Specifies whether or not to display the web view title as the navigation bar title.
-    The default value is `false`, which sets the navigation bar title to the URL host name of the URL request.
+    The default is `false`, which sets the navigation bar title to the URL host name of the URL request.
     */
     public final var displaysWebViewTitle: Bool = false
 
