@@ -117,7 +117,7 @@ public class WebViewController: UIViewController {
     }
 
     /// :nodoc:
-    public required init(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         self.configuration = WKWebViewConfiguration()
         self.urlRequest = NSURLRequest(URL: NSURL(string: "")!)
         self.activities = nil
@@ -185,7 +185,7 @@ public class WebViewController: UIViewController {
     // MARK: KVO
 
     /// :nodoc:
-    public override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [NSObject : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+    public override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
         guard let theKeyPath = keyPath where object as? WKWebView == webView else {
             super.observeValueForKeyPath(keyPath, ofObject: object, change: change, context: context)
             return
