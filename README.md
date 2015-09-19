@@ -10,8 +10,8 @@
 
 ## Requirements
 
-* iOS 8
-* Swift 2.0
+* iOS 8+
+* Swift 2.0+
 
 ## Installation
 
@@ -44,6 +44,10 @@ More information on the [gh-pages](https://github.com/jessesquires/JSQWebViewCon
 
 ````swift
 import JSQWebViewController
+
+let controller = WebViewController(url: NSURL(string: "http://jessesquires.com")!)
+let nav = UINavigationController(rootViewController: controller)
+presentViewController(nav, animated: true, completion: nil)
 ````
 
 See the included example app, open `JSQWebViewController.xcworkspace`.
