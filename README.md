@@ -1,6 +1,6 @@
 # JSQWebViewController
 
-[![Build Status](https://secure.travis-ci.org/jessesquires/JSQWebViewController.svg)](http://travis-ci.org/jessesquires/JSQWebViewController) [![Version Status](http://img.shields.io/cocoapods/v/JSQWebViewController.png)][docsLink] [![license MIT](http://img.shields.io/badge/license-MIT-orange.png)][mitLink] [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) ![Platform](https://cocoapod-badges.herokuapp.com/p/JSQWebViewController/badge.png)
+[![Build Status](https://secure.travis-ci.org/jessesquires/JSQWebViewController.svg)](http://travis-ci.org/jessesquires/JSQWebViewController) [![Version Status](http://img.shields.io/cocoapods/v/JSQWebViewController.png)][podLink] [![license MIT](http://img.shields.io/badge/license-MIT-orange.png)][mitLink] [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Platform](https://cocoapod-badges.herokuapp.com/p/JSQWebViewController/badge.png)][docsLink]
 
 *A lightweight Swift WebKit view controller for iOS*
 
@@ -74,3 +74,4 @@ Created and maintained by [**@jesse_squires**](https://twitter.com/jesse_squires
 
 [mitLink]:http://opensource.org/licenses/MIT
 [docsLink]:http://www.jessesquires.com/JSQWebViewController
+[podLink]:https://cocoapods.org/pods/JSQWebViewController
