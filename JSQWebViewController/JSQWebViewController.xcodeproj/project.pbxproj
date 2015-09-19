@@ -7,126 +7,110 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88F759631B091C4E000AE180 /* JSQWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 88F759621B091C4E000AE180 /* JSQWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88F759691B091C4F000AE180 /* JSQWebViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F7595D1B091C4E000AE180 /* JSQWebViewController.framework */; };
-		88F759701B091C4F000AE180 /* JSQWebViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F7596F1B091C4F000AE180 /* JSQWebViewControllerTests.swift */; };
-		88F7597B1B091CDB000AE180 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88F7597A1B091CDB000AE180 /* WebViewController.swift */; };
+		88AEBB0C1BADF48300923E82 /* JSQWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 88AEBB0B1BADF48300923E82 /* JSQWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88AEBB131BADF48300923E82 /* JSQWebViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88AEBB081BADF48300923E82 /* JSQWebViewController.framework */; settings = {ASSET_TAGS = (); }; };
+		88AEBB181BADF48300923E82 /* JSQWebViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AEBB171BADF48300923E82 /* JSQWebViewControllerTests.swift */; };
+		88AEBB231BADF4A700923E82 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AEBB221BADF4A700923E82 /* WebViewController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		88F7596A1B091C4F000AE180 /* PBXContainerItemProxy */ = {
+		88AEBB141BADF48300923E82 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 88F759541B091C4E000AE180 /* Project object */;
+			containerPortal = 88AEBAFF1BADF48300923E82 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 88F7595C1B091C4E000AE180;
+			remoteGlobalIDString = 88AEBB071BADF48300923E82;
 			remoteInfo = JSQWebViewController;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		88F7595D1B091C4E000AE180 /* JSQWebViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSQWebViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		88F759611B091C4E000AE180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88F759621B091C4E000AE180 /* JSQWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSQWebViewController.h; sourceTree = "<group>"; };
-		88F759681B091C4F000AE180 /* JSQWebViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSQWebViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		88F7596E1B091C4F000AE180 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88F7596F1B091C4F000AE180 /* JSQWebViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSQWebViewControllerTests.swift; sourceTree = "<group>"; };
-		88F7597A1B091CDB000AE180 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		88AEBB081BADF48300923E82 /* JSQWebViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSQWebViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88AEBB0B1BADF48300923E82 /* JSQWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSQWebViewController.h; sourceTree = "<group>"; };
+		88AEBB0D1BADF48300923E82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88AEBB121BADF48300923E82 /* JSQWebViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSQWebViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		88AEBB171BADF48300923E82 /* JSQWebViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSQWebViewControllerTests.swift; sourceTree = "<group>"; };
+		88AEBB191BADF48300923E82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88AEBB221BADF4A700923E82 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		88F759591B091C4E000AE180 /* Frameworks */ = {
+		88AEBB041BADF48300923E82 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88F759651B091C4F000AE180 /* Frameworks */ = {
+		88AEBB0F1BADF48300923E82 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88F759691B091C4F000AE180 /* JSQWebViewController.framework in Frameworks */,
+				88AEBB131BADF48300923E82 /* JSQWebViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		88F759531B091C4E000AE180 = {
+		88AEBAFE1BADF48300923E82 = {
 			isa = PBXGroup;
 			children = (
-				88F7595F1B091C4E000AE180 /* JSQWebViewController */,
-				88F7596C1B091C4F000AE180 /* JSQWebViewControllerTests */,
-				88F7595E1B091C4E000AE180 /* Products */,
+				88AEBB0A1BADF48300923E82 /* JSQWebViewController */,
+				88AEBB161BADF48300923E82 /* JSQWebViewControllerTests */,
+				88AEBB091BADF48300923E82 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		88F7595E1B091C4E000AE180 /* Products */ = {
+		88AEBB091BADF48300923E82 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				88F7595D1B091C4E000AE180 /* JSQWebViewController.framework */,
-				88F759681B091C4F000AE180 /* JSQWebViewControllerTests.xctest */,
+				88AEBB081BADF48300923E82 /* JSQWebViewController.framework */,
+				88AEBB121BADF48300923E82 /* JSQWebViewControllerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		88F7595F1B091C4E000AE180 /* JSQWebViewController */ = {
+		88AEBB0A1BADF48300923E82 /* JSQWebViewController */ = {
 			isa = PBXGroup;
 			children = (
-				88F759621B091C4E000AE180 /* JSQWebViewController.h */,
-				88F7597A1B091CDB000AE180 /* WebViewController.swift */,
-				88F759601B091C4E000AE180 /* Supporting Files */,
+				88AEBB0D1BADF48300923E82 /* Info.plist */,
+				88AEBB0B1BADF48300923E82 /* JSQWebViewController.h */,
+				88AEBB221BADF4A700923E82 /* WebViewController.swift */,
 			);
 			path = JSQWebViewController;
 			sourceTree = "<group>";
 		};
-		88F759601B091C4E000AE180 /* Supporting Files */ = {
+		88AEBB161BADF48300923E82 /* JSQWebViewControllerTests */ = {
 			isa = PBXGroup;
 			children = (
-				88F759611B091C4E000AE180 /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		88F7596C1B091C4F000AE180 /* JSQWebViewControllerTests */ = {
-			isa = PBXGroup;
-			children = (
-				88F7596F1B091C4F000AE180 /* JSQWebViewControllerTests.swift */,
-				88F7596D1B091C4F000AE180 /* Supporting Files */,
+				88AEBB191BADF48300923E82 /* Info.plist */,
+				88AEBB171BADF48300923E82 /* JSQWebViewControllerTests.swift */,
 			);
 			path = JSQWebViewControllerTests;
-			sourceTree = "<group>";
-		};
-		88F7596D1B091C4F000AE180 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				88F7596E1B091C4F000AE180 /* Info.plist */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		88F7595A1B091C4E000AE180 /* Headers */ = {
+		88AEBB051BADF48300923E82 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88F759631B091C4E000AE180 /* JSQWebViewController.h in Headers */,
+				88AEBB0C1BADF48300923E82 /* JSQWebViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		88F7595C1B091C4E000AE180 /* JSQWebViewController */ = {
+		88AEBB071BADF48300923E82 /* JSQWebViewController */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88F759731B091C4F000AE180 /* Build configuration list for PBXNativeTarget "JSQWebViewController" */;
+			buildConfigurationList = 88AEBB1C1BADF48300923E82 /* Build configuration list for PBXNativeTarget "JSQWebViewController" */;
 			buildPhases = (
-				88F759581B091C4E000AE180 /* Sources */,
-				88F759591B091C4E000AE180 /* Frameworks */,
-				88F7595A1B091C4E000AE180 /* Headers */,
-				88F7595B1B091C4E000AE180 /* Resources */,
+				88AEBB031BADF48300923E82 /* Sources */,
+				88AEBB041BADF48300923E82 /* Frameworks */,
+				88AEBB051BADF48300923E82 /* Headers */,
+				88AEBB061BADF48300923E82 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -134,72 +118,72 @@
 			);
 			name = JSQWebViewController;
 			productName = JSQWebViewController;
-			productReference = 88F7595D1B091C4E000AE180 /* JSQWebViewController.framework */;
+			productReference = 88AEBB081BADF48300923E82 /* JSQWebViewController.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		88F759671B091C4F000AE180 /* JSQWebViewControllerTests */ = {
+		88AEBB111BADF48300923E82 /* JSQWebViewControllerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 88F759761B091C4F000AE180 /* Build configuration list for PBXNativeTarget "JSQWebViewControllerTests" */;
+			buildConfigurationList = 88AEBB1F1BADF48300923E82 /* Build configuration list for PBXNativeTarget "JSQWebViewControllerTests" */;
 			buildPhases = (
-				88F759641B091C4F000AE180 /* Sources */,
-				88F759651B091C4F000AE180 /* Frameworks */,
-				88F759661B091C4F000AE180 /* Resources */,
+				88AEBB0E1BADF48300923E82 /* Sources */,
+				88AEBB0F1BADF48300923E82 /* Frameworks */,
+				88AEBB101BADF48300923E82 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				88F7596B1B091C4F000AE180 /* PBXTargetDependency */,
+				88AEBB151BADF48300923E82 /* PBXTargetDependency */,
 			);
 			name = JSQWebViewControllerTests;
 			productName = JSQWebViewControllerTests;
-			productReference = 88F759681B091C4F000AE180 /* JSQWebViewControllerTests.xctest */;
+			productReference = 88AEBB121BADF48300923E82 /* JSQWebViewControllerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		88F759541B091C4E000AE180 /* Project object */ = {
+		88AEBAFF1BADF48300923E82 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Hexed Bits";
 				TargetAttributes = {
-					88F7595C1B091C4E000AE180 = {
-						CreatedOnToolsVersion = 6.3.1;
+					88AEBB071BADF48300923E82 = {
+						CreatedOnToolsVersion = 7.0;
 					};
-					88F759671B091C4F000AE180 = {
-						CreatedOnToolsVersion = 6.3.1;
+					88AEBB111BADF48300923E82 = {
+						CreatedOnToolsVersion = 7.0;
 					};
 				};
 			};
-			buildConfigurationList = 88F759571B091C4E000AE180 /* Build configuration list for PBXProject "JSQWebViewController" */;
+			buildConfigurationList = 88AEBB021BADF48300923E82 /* Build configuration list for PBXProject "JSQWebViewController" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = 88F759531B091C4E000AE180;
-			productRefGroup = 88F7595E1B091C4E000AE180 /* Products */;
+			mainGroup = 88AEBAFE1BADF48300923E82;
+			productRefGroup = 88AEBB091BADF48300923E82 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				88F7595C1B091C4E000AE180 /* JSQWebViewController */,
-				88F759671B091C4F000AE180 /* JSQWebViewControllerTests */,
+				88AEBB071BADF48300923E82 /* JSQWebViewController */,
+				88AEBB111BADF48300923E82 /* JSQWebViewControllerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		88F7595B1B091C4E000AE180 /* Resources */ = {
+		88AEBB061BADF48300923E82 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88F759661B091C4F000AE180 /* Resources */ = {
+		88AEBB101BADF48300923E82 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -209,34 +193,34 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		88F759581B091C4E000AE180 /* Sources */ = {
+		88AEBB031BADF48300923E82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88F7597B1B091CDB000AE180 /* WebViewController.swift in Sources */,
+				88AEBB231BADF4A700923E82 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		88F759641B091C4F000AE180 /* Sources */ = {
+		88AEBB0E1BADF48300923E82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88F759701B091C4F000AE180 /* JSQWebViewControllerTests.swift in Sources */,
+				88AEBB181BADF48300923E82 /* JSQWebViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		88F7596B1B091C4F000AE180 /* PBXTargetDependency */ = {
+		88AEBB151BADF48300923E82 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 88F7595C1B091C4E000AE180 /* JSQWebViewController */;
-			targetProxy = 88F7596A1B091C4F000AE180 /* PBXContainerItemProxy */;
+			target = 88AEBB071BADF48300923E82 /* JSQWebViewController */;
+			targetProxy = 88AEBB141BADF48300923E82 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		88F759711B091C4F000AE180 /* Debug */ = {
+		88AEBB1A1BADF48300923E82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -256,7 +240,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -267,7 +251,6 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -285,7 +268,7 @@
 			};
 			name = Debug;
 		};
-		88F759721B091C4F000AE180 /* Release */ = {
+		88AEBB1B1BADF48300923E82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -326,7 +309,7 @@
 			};
 			name = Release;
 		};
-		88F759741B091C4F000AE180 /* Debug */ = {
+		88AEBB1D1BADF48300923E82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -338,14 +321,14 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hexedbits.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexedbits.JSQWebViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		88F759751B091C4F000AE180 /* Release */ = {
+		88AEBB1E1BADF48300923E82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
@@ -357,34 +340,28 @@
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hexedbits.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexedbits.JSQWebViewController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
 		};
-		88F759771B091C4F000AE180 /* Debug */ = {
+		88AEBB201BADF48300923E82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
 				INFOPLIST_FILE = JSQWebViewControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hexedbits.$(PRODUCT_NAME:rfc1034identifier)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexedbits.JSQWebViewControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		88F759781B091C4F000AE180 /* Release */ = {
+		88AEBB211BADF48300923E82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = JSQWebViewControllerTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hexedbits.$(PRODUCT_NAME:rfc1034identifier)";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexedbits.JSQWebViewControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -392,34 +369,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		88F759571B091C4E000AE180 /* Build configuration list for PBXProject "JSQWebViewController" */ = {
+		88AEBB021BADF48300923E82 /* Build configuration list for PBXProject "JSQWebViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88F759711B091C4F000AE180 /* Debug */,
-				88F759721B091C4F000AE180 /* Release */,
+				88AEBB1A1BADF48300923E82 /* Debug */,
+				88AEBB1B1BADF48300923E82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88F759731B091C4F000AE180 /* Build configuration list for PBXNativeTarget "JSQWebViewController" */ = {
+		88AEBB1C1BADF48300923E82 /* Build configuration list for PBXNativeTarget "JSQWebViewController" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88F759741B091C4F000AE180 /* Debug */,
-				88F759751B091C4F000AE180 /* Release */,
+				88AEBB1D1BADF48300923E82 /* Debug */,
+				88AEBB1E1BADF48300923E82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		88F759761B091C4F000AE180 /* Build configuration list for PBXNativeTarget "JSQWebViewControllerTests" */ = {
+		88AEBB1F1BADF48300923E82 /* Build configuration list for PBXNativeTarget "JSQWebViewControllerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				88F759771B091C4F000AE180 /* Debug */,
-				88F759781B091C4F000AE180 /* Release */,
+				88AEBB201BADF48300923E82 /* Debug */,
+				88AEBB211BADF48300923E82 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 88F759541B091C4E000AE180 /* Project object */;
+	rootObject = 88AEBAFF1BADF48300923E82 /* Project object */;
 }

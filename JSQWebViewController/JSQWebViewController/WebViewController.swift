@@ -138,10 +138,16 @@ public class WebViewController: UIViewController {
         title = urlRequest.URL?.host
 
         if presentingViewController?.presentedViewController != nil {
-            navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Done, target: self, action: Selector("didTapDoneButton:"))
+            navigationItem.leftBarButtonItem = UIBarButtonItem(
+                barButtonSystemItem: .Done,
+                target: self,
+                action: Selector("didTapDoneButton:"))
         }
 
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .Action, target: self, action: Selector("didTapActionButton:"))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(
+            barButtonSystemItem: .Action,
+            target: self,
+            action: Selector("didTapActionButton:"))
 
         webView.loadRequest(urlRequest)
     }
@@ -161,9 +167,19 @@ public class WebViewController: UIViewController {
     /// :nodoc:
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        webView.frame = view.bounds
+
+        webView.frame = CGRect(
+            x: view.frame.minX,
+            y: view.frame.minY,
+            width: view.frame.size.width,
+            height: view.frame.size.height)
+
         view.bringSubviewToFront(progressBar)
-        progressBar.frame = CGRect(x: 0, y: topLayoutGuide.length, width: view.frame.size.width, height: 2)
+        progressBar.frame = CGRect(
+            x: view.frame.minX,
+            y: topLayoutGuide.length,
+            width: view.frame.size.width,
+            height: 2)
     }
 
 
@@ -207,5 +223,5 @@ public class WebViewController: UIViewController {
         progressBar.setProgress(completed ? 0.0 : Float(webView.estimatedProgress), animated: !completed)
         UIApplication.sharedApplication().networkActivityIndicatorVisible = !completed
     }
-
+    
 }
