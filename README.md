@@ -8,6 +8,10 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![screenshot](https://raw.githubusercontent.com/jessesquires/JSQWebViewController/develop/screenshot_1.png)
 
+> **NOTE:** As of iOS 9, this library is no longer necessary. 
+>
+> You should probably use [`SFSafariViewController`](https://developer.apple.com/library/prerelease/ios/documentation/SafariServices/Reference/SFSafariViewController_Ref/index.html) instead.
+
 ## Requirements
 
 * iOS 8+
