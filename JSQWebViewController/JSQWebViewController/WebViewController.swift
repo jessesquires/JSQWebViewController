@@ -170,12 +170,11 @@ public class WebViewController: UIViewController {
     /// :nodoc:
     public override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
+        webView.frame = view.bounds
 
-        webView.frame = CGRect(
-            x: view.frame.minX,
-            y: view.frame.minY,
-            width: view.frame.size.width,
-            height: view.frame.size.height)
+        let insets = UIEdgeInsets(top: topLayoutGuide.length, left: 0, bottom: 0, right: 0)
+        webView.scrollView.contentInset = insets
+        webView.scrollView.scrollIndicatorInsets = insets
 
         view.bringSubviewToFront(progressBar)
         progressBar.frame = CGRect(

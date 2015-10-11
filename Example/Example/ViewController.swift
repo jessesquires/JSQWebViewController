@@ -25,6 +25,11 @@ class ViewController: UITableViewController {
 
     let url = NSURL(string: "http://jessesquires.com")!
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.navigationController?.navigationBar.translucent = true
+    }
+
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         tableView.deselectRowAtIndexPath(indexPath, animated: true)
 
