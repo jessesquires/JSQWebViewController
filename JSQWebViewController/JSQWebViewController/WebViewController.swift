@@ -67,11 +67,14 @@ public class WebViewController: UIViewController {
             return views.first!
         }
 
-        let webView = WKWebView(frame: self.view.bounds, configuration: self.configuration)
+        let webView = WKWebView(frame: CGRect.zero, configuration: self.configuration)
         self.view.addSubview(webView)
         webView.addObserver(self, forKeyPath: TitleKeyPath, options: .New, context: nil)
         webView.addObserver(self, forKeyPath: EstimatedProgressKeyPath, options: .New, context: nil)
         webView.allowsBackForwardNavigationGestures = true
+        if #available(iOS 9.0, *) {
+            webView.allowsLinkPreview = true
+        }
         return webView
         }()
 
