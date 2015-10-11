@@ -221,7 +221,7 @@ public class WebViewController: UIViewController {
 
     // MARK: Private
 
-    private func updateProgress() {
+    private final func updateProgress() {
         let completed = webView.estimatedProgress == 1.0
         progressBar.setProgress(completed ? 0.0 : Float(webView.estimatedProgress), animated: !completed)
         UIApplication.sharedApplication().networkActivityIndicatorVisible = !completed

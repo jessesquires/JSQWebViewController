@@ -18,6 +18,11 @@
 
 import UIKit
 import XCTest
+import WebKit
+
+@testable
+import JSQWebViewController
+
 
 class JSQWebViewControllerTests: XCTestCase {
     
@@ -28,5 +33,15 @@ class JSQWebViewControllerTests: XCTestCase {
     override func tearDown() {
         super.tearDown()
     }
-    
+
+    func test_thatWebViewController_InitializesSuccessfully() {
+        let webVC = WebViewController(url: NSURL(string: "http://jessesquires.com")!)
+        XCTAssertNotNil(webVC);
+
+        XCTAssertNotNil(webVC.webView)
+        XCTAssertNotNil(webVC.progressBar)
+        XCTAssertNotNil(webVC.urlRequest)
+
+        XCTAssertEqual(webVC.displaysWebViewTitle, false)
+    }
 }
