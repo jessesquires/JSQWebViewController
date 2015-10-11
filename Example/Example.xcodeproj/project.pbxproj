@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		886487E71BCAD5DC00671052 /* JSQWebViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 886487E31BCAD5C500671052 /* JSQWebViewController.framework */; };
 		886487E81BCAD5DC00671052 /* JSQWebViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 886487E31BCAD5C500671052 /* JSQWebViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		886487F41BCADBED00671052 /* ExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886487F31BCADBED00671052 /* ExampleUITests.swift */; };
 		88AEBB621BADF8C500923E82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AEBB611BADF8C500923E82 /* AppDelegate.swift */; };
 		88AEBB641BADF8C500923E82 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AEBB631BADF8C500923E82 /* ViewController.swift */; };
 		88AEBB671BADF8C600923E82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88AEBB651BADF8C600923E82 /* Main.storyboard */; };
@@ -38,6 +39,13 @@
 			remoteGlobalIDString = 88AEBB071BADF48300923E82;
 			remoteInfo = JSQWebViewController;
 		};
+		886487F61BCADBED00671052 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 88AEBB561BADF8C500923E82 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88AEBB5D1BADF8C500923E82;
+			remoteInfo = Example;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -56,6 +64,9 @@
 
 /* Begin PBXFileReference section */
 		886487DD1BCAD5C500671052 /* JSQWebViewController.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = JSQWebViewController.xcodeproj; path = ../JSQWebViewController/JSQWebViewController.xcodeproj; sourceTree = "<group>"; };
+		886487F11BCADBED00671052 /* ExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		886487F31BCADBED00671052 /* ExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExampleUITests.swift; sourceTree = "<group>"; };
+		886487F51BCADBED00671052 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88AEBB5E1BADF8C500923E82 /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88AEBB611BADF8C500923E82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		88AEBB631BADF8C500923E82 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +77,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		886487EE1BCADBED00671052 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		88AEBB5B1BADF8C500923E82 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -86,10 +104,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		886487F21BCADBED00671052 /* ExampleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				886487F31BCADBED00671052 /* ExampleUITests.swift */,
+				886487F51BCADBED00671052 /* Info.plist */,
+			);
+			path = ExampleUITests;
+			sourceTree = "<group>";
+		};
 		88AEBB551BADF8C500923E82 = {
 			isa = PBXGroup;
 			children = (
 				88AEBB601BADF8C500923E82 /* Example */,
+				886487F21BCADBED00671052 /* ExampleUITests */,
 				88AEBB5F1BADF8C500923E82 /* Products */,
 				886487DD1BCAD5C500671052 /* JSQWebViewController.xcodeproj */,
 			);
@@ -99,6 +127,7 @@
 			isa = PBXGroup;
 			children = (
 				88AEBB5E1BADF8C500923E82 /* Example.app */,
+				886487F11BCADBED00671052 /* ExampleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -119,6 +148,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		886487F01BCADBED00671052 /* ExampleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 886487F81BCADBED00671052 /* Build configuration list for PBXNativeTarget "ExampleUITests" */;
+			buildPhases = (
+				886487ED1BCADBED00671052 /* Sources */,
+				886487EE1BCADBED00671052 /* Frameworks */,
+				886487EF1BCADBED00671052 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				886487F71BCADBED00671052 /* PBXTargetDependency */,
+			);
+			name = ExampleUITests;
+			productName = ExampleUITests;
+			productReference = 886487F11BCADBED00671052 /* ExampleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 		88AEBB5D1BADF8C500923E82 /* Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 88AEBB7B1BADF8C600923E82 /* Build configuration list for PBXNativeTarget "Example" */;
@@ -147,6 +194,10 @@
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Hexed Bits";
 				TargetAttributes = {
+					886487F01BCADBED00671052 = {
+						CreatedOnToolsVersion = 7.0.1;
+						TestTargetID = 88AEBB5D1BADF8C500923E82;
+					};
 					88AEBB5D1BADF8C500923E82 = {
 						CreatedOnToolsVersion = 7.0;
 					};
@@ -172,6 +223,7 @@
 			projectRoot = "";
 			targets = (
 				88AEBB5D1BADF8C500923E82 /* Example */,
+				886487F01BCADBED00671052 /* ExampleUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -194,6 +246,13 @@
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
+		886487EF1BCADBED00671052 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		88AEBB5C1BADF8C500923E82 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -207,6 +266,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		886487ED1BCADBED00671052 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				886487F41BCADBED00671052 /* ExampleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		88AEBB5A1BADF8C500923E82 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -223,6 +290,11 @@
 			isa = PBXTargetDependency;
 			name = JSQWebViewController;
 			targetProxy = 886487E91BCAD5DC00671052 /* PBXContainerItemProxy */;
+		};
+		886487F71BCADBED00671052 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 88AEBB5D1BADF8C500923E82 /* Example */;
+			targetProxy = 886487F61BCADBED00671052 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -246,6 +318,32 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		886487F91BCADBED00671052 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexedbits.ExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Example;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		886487FA1BCADBED00671052 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ExampleUITests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hexedbits.ExampleUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = Example;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
 		88AEBB791BADF8C600923E82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -356,6 +454,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		886487F81BCADBED00671052 /* Build configuration list for PBXNativeTarget "ExampleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				886487F91BCADBED00671052 /* Debug */,
+				886487FA1BCADBED00671052 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		88AEBB591BADF8C500923E82 /* Build configuration list for PBXProject "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
