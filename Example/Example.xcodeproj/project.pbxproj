@@ -461,6 +461,7 @@
 				886487FA1BCADBED00671052 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88AEBB591BADF8C500923E82 /* Build configuration list for PBXProject "Example" */ = {
 			isa = XCConfigurationList;
