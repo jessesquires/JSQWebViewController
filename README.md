@@ -1,6 +1,6 @@
 # JSQWebViewController
 
-[![Build Status](https://secure.travis-ci.org/jessesquires/JSQWebViewController.svg)](http://travis-ci.org/jessesquires/JSQWebViewController) [![Version Status](https://img.shields.io/cocoapods/v/JSQWebViewController.svg)][podLink] [![license MIT](https://img.shields.io/cocoapods/l/JSQWebViewController.svg)][mitLink] [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Platform](https://img.shields.io/cocoapods/p/JSQWebViewController.svg)][docsLink]
+[![Build Status](https://secure.travis-ci.org/jessesquires/JSQWebViewController.svg)](http://travis-ci.org/jessesquires/JSQWebViewController) [![Version Status](https://img.shields.io/cocoapods/v/JSQWebViewController.svg)][podLink] [![license MIT](https://img.shields.io/cocoapods/l/JSQWebViewController.svg)][mitLink] [![codecov.io](https://img.shields.io/codecov/c/github/jessesquires/JSQWebViewController.svg)](http://codecov.io/github/jessesquires/JSQWebViewController) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Platform](https://img.shields.io/cocoapods/p/JSQWebViewController.svg)][docsLink]
 
 *A lightweight Swift WebKit view controller for iOS*
 
