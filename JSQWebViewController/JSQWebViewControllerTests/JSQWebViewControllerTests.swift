@@ -38,6 +38,10 @@ class JSQWebViewControllerTests: XCTestCase {
         let webVC = WebViewController(url: NSURL(string: "http://jessesquires.com")!)
         XCTAssertNotNil(webVC);
 
+        let nav = UINavigationController(rootViewController: webVC)
+        nav.beginAppearanceTransition(true, animated: false)
+        nav.endAppearanceTransition()
+
         XCTAssertNotNil(webVC.webView)
         XCTAssertNotNil(webVC.progressBar)
         XCTAssertNotNil(webVC.urlRequest)
