@@ -4,4 +4,7 @@
    <FileRef
       location = "group:Example/Example.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:JSQWebViewController.xcodeproj">
+   </FileRef>
 </Workspace>

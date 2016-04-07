@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
    s.authors = 'Jesse Squires'
 
    s.source = { :git => 'https://github.com/jessesquires/JSQWebViewController.git', :tag => s.version }
-   s.source_files = 'JSQWebViewController/JSQWebViewController/*.swift'
+   s.source_files = 'Source/*.swift'
 
    s.platform = :ios, '8.0'
 

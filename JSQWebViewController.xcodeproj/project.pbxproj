@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		88AEBB0C1BADF48300923E82 /* JSQWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 88AEBB0B1BADF48300923E82 /* JSQWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88AEBB131BADF48300923E82 /* JSQWebViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88AEBB081BADF48300923E82 /* JSQWebViewController.framework */; };
-		88AEBB181BADF48300923E82 /* JSQWebViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AEBB171BADF48300923E82 /* JSQWebViewControllerTests.swift */; };
-		88AEBB231BADF4A700923E82 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AEBB221BADF4A700923E82 /* WebViewController.swift */; };
+		88E3AF701CB62C0100F1E775 /* JSQWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 88E3AF6B1CB62BD700F1E775 /* JSQWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		88E3AF711CB62C0700F1E775 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E3AF6C1CB62BD700F1E775 /* WebViewController.swift */; };
+		88E3AF741CB62C3000F1E775 /* JSQWebViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E3AF6F1CB62BD700F1E775 /* JSQWebViewControllerTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -25,12 +25,12 @@
 
 /* Begin PBXFileReference section */
 		88AEBB081BADF48300923E82 /* JSQWebViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = JSQWebViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		88AEBB0B1BADF48300923E82 /* JSQWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSQWebViewController.h; sourceTree = "<group>"; };
-		88AEBB0D1BADF48300923E82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88AEBB121BADF48300923E82 /* JSQWebViewControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JSQWebViewControllerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		88AEBB171BADF48300923E82 /* JSQWebViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSQWebViewControllerTests.swift; sourceTree = "<group>"; };
-		88AEBB191BADF48300923E82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		88AEBB221BADF4A700923E82 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		88E3AF6A1CB62BD700F1E775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88E3AF6B1CB62BD700F1E775 /* JSQWebViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JSQWebViewController.h; sourceTree = "<group>"; };
+		88E3AF6C1CB62BD700F1E775 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		88E3AF6E1CB62BD700F1E775 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		88E3AF6F1CB62BD700F1E775 /* JSQWebViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSQWebViewControllerTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +55,8 @@
 		88AEBAFE1BADF48300923E82 = {
 			isa = PBXGroup;
 			children = (
-				88AEBB0A1BADF48300923E82 /* JSQWebViewController */,
-				88AEBB161BADF48300923E82 /* JSQWebViewControllerTests */,
+				88E3AF691CB62BD700F1E775 /* Source */,
+				88E3AF6D1CB62BD700F1E775 /* Tests */,
 				88AEBB091BADF48300923E82 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -70,23 +70,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		88AEBB0A1BADF48300923E82 /* JSQWebViewController */ = {
+		88E3AF691CB62BD700F1E775 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				88AEBB0D1BADF48300923E82 /* Info.plist */,
-				88AEBB0B1BADF48300923E82 /* JSQWebViewController.h */,
-				88AEBB221BADF4A700923E82 /* WebViewController.swift */,
+				88E3AF6A1CB62BD700F1E775 /* Info.plist */,
+				88E3AF6B1CB62BD700F1E775 /* JSQWebViewController.h */,
+				88E3AF6C1CB62BD700F1E775 /* WebViewController.swift */,
 			);
-			path = JSQWebViewController;
+			path = Source;
 			sourceTree = "<group>";
 		};
-		88AEBB161BADF48300923E82 /* JSQWebViewControllerTests */ = {
+		88E3AF6D1CB62BD700F1E775 /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				88AEBB191BADF48300923E82 /* Info.plist */,
-				88AEBB171BADF48300923E82 /* JSQWebViewControllerTests.swift */,
+				88E3AF6E1CB62BD700F1E775 /* Info.plist */,
+				88E3AF6F1CB62BD700F1E775 /* JSQWebViewControllerTests.swift */,
 			);
-			path = JSQWebViewControllerTests;
+			path = Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,7 +96,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88AEBB0C1BADF48300923E82 /* JSQWebViewController.h in Headers */,
+				88E3AF701CB62C0100F1E775 /* JSQWebViewController.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +197,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88AEBB231BADF4A700923E82 /* WebViewController.swift in Sources */,
+				88E3AF711CB62C0700F1E775 /* WebViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,7 +205,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88AEBB181BADF48300923E82 /* JSQWebViewControllerTests.swift in Sources */,
+				88E3AF741CB62C3000F1E775 /* JSQWebViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,7 +317,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = JSQWebViewController/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -336,7 +336,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = JSQWebViewController/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Source/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -349,7 +349,7 @@
 		88AEBB201BADF48300923E82 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = JSQWebViewControllerTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hexedbits.JSQWebViewControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -359,7 +359,7 @@
 		88AEBB211BADF48300923E82 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				INFOPLIST_FILE = JSQWebViewControllerTests/Info.plist;
+				INFOPLIST_FILE = Tests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.hexedbits.JSQWebViewControllerTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";

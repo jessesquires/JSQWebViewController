@@ -52,7 +52,7 @@ script:
 
 # Build for reporting test coverage
 - if [ $RUN_TESTS == "YES" ]; then
-      xcodebuild test -project JSQWebViewController/JSQWebViewController.xcodeproj -scheme "JSQWebViewController" -sdk iphonesimulator;
+      xcodebuild test -project JSQWebViewController.xcodeproj -scheme "JSQWebViewController" -sdk iphonesimulator;
   fi
 
 after_success:
