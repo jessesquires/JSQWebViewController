@@ -13,8 +13,8 @@
 		88AEBB671BADF8C600923E82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 88AEBB651BADF8C600923E82 /* Main.storyboard */; };
 		88AEBB691BADF8C600923E82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88AEBB681BADF8C600923E82 /* Assets.xcassets */; };
 		88AEBB901BADF9B600923E82 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 88AEBB8E1BADF9B600923E82 /* LaunchScreen.xib */; };
-		88E3AF801CB62DB000F1E775 /* JSQWebViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E3AF7F1CB62DB000F1E775 /* JSQWebViewController.framework */; };
-		88E3AF811CB62DB000F1E775 /* JSQWebViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88E3AF7F1CB62DB000F1E775 /* JSQWebViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		88E3AF911CB62FA300F1E775 /* JSQWebViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88E3AF901CB62FA300F1E775 /* JSQWebViewController.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		88E3AF921CB62FA300F1E775 /* JSQWebViewController.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 88E3AF901CB62FA300F1E775 /* JSQWebViewController.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,7 +34,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				88E3AF811CB62DB000F1E775 /* JSQWebViewController.framework in Embed Frameworks */,
+				88E3AF921CB62FA300F1E775 /* JSQWebViewController.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -52,7 +52,7 @@
 		88AEBB681BADF8C600923E82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88AEBB6D1BADF8C600923E82 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		88AEBB8F1BADF9B600923E82 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		88E3AF7F1CB62DB000F1E775 /* JSQWebViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = JSQWebViewController.framework; path = "/Users/jesse/Library/Developer/Xcode/DerivedData/JSQWebViewController-cjqxmjuknbrcomhhgclbcgysylam/Build/Products/Debug-iphoneos/JSQWebViewController.framework"; sourceTree = "<absolute>"; };
+		88E3AF901CB62FA300F1E775 /* JSQWebViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; name = JSQWebViewController.framework; path = "/Users/jesse/Library/Developer/Xcode/DerivedData/JSQWebViewController-cjqxmjuknbrcomhhgclbcgysylam/Build/Products/Debug-iphonesimulator/JSQWebViewController.framework"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +67,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88E3AF801CB62DB000F1E775 /* JSQWebViewController.framework in Frameworks */,
+				88E3AF911CB62FA300F1E775 /* JSQWebViewController.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,10 +86,10 @@
 		88AEBB551BADF8C500923E82 = {
 			isa = PBXGroup;
 			children = (
-				88E3AF7F1CB62DB000F1E775 /* JSQWebViewController.framework */,
 				88AEBB601BADF8C500923E82 /* Example */,
 				886487F21BCADBED00671052 /* ExampleUITests */,
 				88AEBB5F1BADF8C500923E82 /* Products */,
+				88E3AF901CB62FA300F1E775 /* JSQWebViewController.framework */,
 			);
 			sourceTree = "<group>";
 		};

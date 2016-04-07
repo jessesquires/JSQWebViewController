@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "88AEBB071BADF48300923E82"
+               BuildableName = "JSQWebViewController.framework"
+               BlueprintName = "JSQWebViewController"
+               ReferencedContainer = "container:../JSQWebViewController.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "88AEBB5D1BADF8C500923E82"
                BuildableName = "Example.app"
                BlueprintName = "Example"
