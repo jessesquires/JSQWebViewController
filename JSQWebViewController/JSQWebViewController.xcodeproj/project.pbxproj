@@ -8,9 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		88AEBB0C1BADF48300923E82 /* JSQWebViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 88AEBB0B1BADF48300923E82 /* JSQWebViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88AEBB131BADF48300923E82 /* JSQWebViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88AEBB081BADF48300923E82 /* JSQWebViewController.framework */; settings = {ASSET_TAGS = (); }; };
+		88AEBB131BADF48300923E82 /* JSQWebViewController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88AEBB081BADF48300923E82 /* JSQWebViewController.framework */; };
 		88AEBB181BADF48300923E82 /* JSQWebViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AEBB171BADF48300923E82 /* JSQWebViewControllerTests.swift */; };
-		88AEBB231BADF4A700923E82 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AEBB221BADF4A700923E82 /* WebViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		88AEBB231BADF4A700923E82 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88AEBB221BADF4A700923E82 /* WebViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
