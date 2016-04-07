@@ -7,6 +7,9 @@ The changelog for `JSQWebViewController`. Also see the [releases](https://github
 3.0.0
 -----
 
+This release closes the [3.0.0 milestone](https://github.com/jessesquires/JSQWebViewController/issues?utf8=✓&q=+milestone%3A3.0.0+).
+
+- Swift 2.2 and above is now required
 
 2.0.1
 -----
