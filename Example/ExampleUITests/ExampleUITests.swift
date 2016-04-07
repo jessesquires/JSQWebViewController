@@ -16,9 +16,11 @@
 //  Released under an MIT license: http://opensource.org/licenses/MIT
 //
 
+import UIKit
 import XCTest
 
-class ExampleUITests: XCTestCase {
+
+final class ExampleUITests: XCTestCase {
         
     override func setUp() {
         super.setUp()

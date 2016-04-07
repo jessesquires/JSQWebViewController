@@ -24,7 +24,7 @@ import WebKit
 import JSQWebViewController
 
 
-class JSQWebViewControllerTests: XCTestCase {
+final class JSQWebViewControllerTests: XCTestCase {
     
     override func setUp() {
         super.setUp()

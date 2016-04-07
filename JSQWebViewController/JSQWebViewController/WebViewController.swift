@@ -20,9 +20,8 @@ import UIKit
 import WebKit
 
 
-private let TitleKeyPath = "title"
-
-private let EstimatedProgressKeyPath = "estimatedProgress"
+private let titleKeyPath = "title"
+private let estimatedProgressKeyPath = "estimatedProgress"
 
 
 /// An instance of `WebViewController` displays interactive web content.
@@ -52,9 +51,9 @@ public class WebViewController: UIViewController {
     }
 
     /**
-    Specifies whether or not to display the web view title as the navigation bar title.
-    The default is `false`, which sets the navigation bar title to the URL host name of the URL request.
-    */
+     Specifies whether or not to display the web view title as the navigation bar title.
+     The default is `false`, which sets the navigation bar title to the URL host name of the URL request.
+     */
     public final var displaysWebViewTitle: Bool = false
 
     // MARK: Private properties
@@ -69,8 +68,8 @@ public class WebViewController: UIViewController {
 
         let webView = WKWebView(frame: CGRect.zero, configuration: self.configuration)
         self.view.addSubview(webView)
-        webView.addObserver(self, forKeyPath: TitleKeyPath, options: .New, context: nil)
-        webView.addObserver(self, forKeyPath: EstimatedProgressKeyPath, options: .New, context: nil)
+        webView.addObserver(self, forKeyPath: titleKeyPath, options: .New, context: nil)
+        webView.addObserver(self, forKeyPath: estimatedProgressKeyPath, options: .New, context: nil)
         webView.allowsBackForwardNavigationGestures = true
         if #available(iOS 9.0, *) {
             webView.allowsLinkPreview = true
@@ -93,14 +92,14 @@ public class WebViewController: UIViewController {
     // MARK: Initialization
 
     /**
-    Constructs a new `WebViewController`.
+     Constructs a new `WebViewController`.
 
-    - parameter urlRequest:    The URL request for the web view to load.
-    - parameter configuration: The configuration for the web view.
-    - parameter activities:    The custom activities to display in the `UIActivityViewController` that is presented when the action button is tapped.
+     - parameter urlRequest:    The URL request for the web view to load.
+     - parameter configuration: The configuration for the web view.
+     - parameter activities:    The custom activities to display in the `UIActivityViewController` that is presented when the action button is tapped.
 
-    - returns: A new `WebViewController` instance.
-    */
+     - returns: A new `WebViewController` instance.
+     */
     public init(urlRequest: NSURLRequest, configuration: WKWebViewConfiguration = WKWebViewConfiguration(), activities: [UIActivity]? = nil) {
         self.configuration = configuration
         self.urlRequest = urlRequest
@@ -109,12 +108,12 @@ public class WebViewController: UIViewController {
     }
 
     /**
-    Constructs a new `WebViewController`.
+     Constructs a new `WebViewController`.
 
-    - parameter url: The URL to display in the web view.
+     - parameter url: The URL to display in the web view.
 
-    - returns: A new `WebViewController` instance.
-    */
+     - returns: A new `WebViewController` instance.
+     */
     public convenience init(url: NSURL) {
         self.init(urlRequest: NSURLRequest(URL: url))
     }
@@ -128,8 +127,8 @@ public class WebViewController: UIViewController {
     }
 
     deinit {
-        webView.removeObserver(self, forKeyPath: TitleKeyPath, context: nil)
-        webView.removeObserver(self, forKeyPath: EstimatedProgressKeyPath, context: nil)
+        webView.removeObserver(self, forKeyPath: titleKeyPath, context: nil)
+        webView.removeObserver(self, forKeyPath: estimatedProgressKeyPath, context: nil)
     }
 
 
@@ -144,13 +143,13 @@ public class WebViewController: UIViewController {
             navigationItem.leftBarButtonItem = UIBarButtonItem(
                 barButtonSystemItem: .Done,
                 target: self,
-                action: Selector("didTapDoneButton:"))
+                action: #selector(didTapDoneButton(_:)))
         }
 
         navigationItem.rightBarButtonItem = UIBarButtonItem(
             barButtonSystemItem: .Action,
             target: self,
-            action: Selector("didTapActionButton:"))
+            action: #selector(didTapActionButton(_:)))
 
         webView.loadRequest(urlRequest)
     }
@@ -187,11 +186,11 @@ public class WebViewController: UIViewController {
 
     // MARK: Actions
 
-    internal final func didTapDoneButton(sender: UIBarButtonItem) {
+    final func didTapDoneButton(sender: UIBarButtonItem) {
         dismissViewControllerAnimated(true, completion: nil)
     }
 
-    internal final func didTapActionButton(sender: UIBarButtonItem) {
+    final func didTapActionButton(sender: UIBarButtonItem) {
         if let url = urlRequest.URL {
             let activityVC = UIActivityViewController(activityItems: [url], applicationActivities: activities)
             activityVC.popoverPresentationController?.barButtonItem = sender
@@ -209,11 +208,11 @@ public class WebViewController: UIViewController {
             return
         }
 
-        if displaysWebViewTitle && theKeyPath == TitleKeyPath {
+        if displaysWebViewTitle && theKeyPath == titleKeyPath {
             title = webView.title
         }
 
-        if theKeyPath == EstimatedProgressKeyPath {
+        if theKeyPath == estimatedProgressKeyPath {
             updateProgress()
         }
     }
