@@ -4,9 +4,9 @@
 
 *A lightweight Swift WebKit view controller for iOS*
 
-![screenshot](https://raw.githubusercontent.com/jessesquires/JSQWebViewController/develop/screenshot_0.png)
+![screenshot](https://raw.githubusercontent.com/jessesquires/JSQWebViewController/develop/Screenshots/screenshot_0.png)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-![screenshot](https://raw.githubusercontent.com/jessesquires/JSQWebViewController/develop/screenshot_1.png)
+![screenshot](https://raw.githubusercontent.com/jessesquires/JSQWebViewController/develop/Screenshots/screenshot_1.png)
 
 > **NOTE:** As of iOS 9, this library is no longer necessary. 
 >
@@ -15,7 +15,7 @@
 ## Requirements
 
 * iOS 8+
-* Swift 2.0
+* Swift 2.2+
 
 ## Installation
 
@@ -39,10 +39,7 @@ github "jessesquires/JSQWebViewController"
 
 ## Documentation
 
-Read the [docs][docsLink]. Generated with [jazzy](https://github.com/realm/jazzy). Hosted by [GitHub Pages](https://pages.github.com).
-
-More information on the [gh-pages](https://github.com/jessesquires/JSQWebViewController/tree/gh-pages) branch.
-
+Read the [docs][docsLink]. Generated with [jazzy](https://github.com/realm/jazzy). Hosted by [GitHub Pages](https://pages.github.com). More information on the [`gh-pages`](https://github.com/jessesquires/JSQWebViewController/tree/gh-pages) branch.
 
 ## Getting Started
 
