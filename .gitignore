@@ -17,6 +17,3 @@ DerivedData
 *.hmap
 *.ipa
 *.xcuserstate
-
-# Docs
-_docs/
