@@ -4,6 +4,11 @@ The changelog for `JSQWebViewController`. Also see the [releases](https://github
 
 --------------------------------------
 
+4.0.0
+-----
+
+**Swift 2.3 now required.**
+
 3.0.0
 -----
 
@@ -30,4 +35,4 @@ Closes the [2.0.0 milestone](https://github.com/jessesquires/JSQWebViewControlle
 1.0.0
 -----
 
-:tada: Initial release :tada: 
+:tada: Initial release :tada:
