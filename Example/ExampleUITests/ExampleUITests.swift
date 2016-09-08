@@ -45,7 +45,7 @@ final class ExampleUITests: XCTestCase {
         app.sheets.buttons["Cancel"].tap()
         XCTAssertTrue(app.sheets.count == 0)
 
-        navbar.childrenMatchingType(.Button).matchingIdentifier("Back").elementBoundByIndex(0).tap()
+        navbar.children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
         XCTAssertTrue(app.webViews.count == 0)
     }
 
@@ -79,8 +79,7 @@ final class ExampleUITests: XCTestCase {
         app.sheets.buttons["Cancel"].tap()
         XCTAssertTrue(app.sheets.count == 0)
 
-        navbar.childrenMatchingType(.Button).matchingIdentifier("Back").elementBoundByIndex(0).tap()
+        navbar.children(matching: .button).matching(identifier: "Back").element(boundBy: 0).tap()
         XCTAssertTrue(app.webViews.count == 0)
     }
-    
 }

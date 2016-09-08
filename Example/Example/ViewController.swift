@@ -17,21 +17,19 @@
 //
 
 import UIKit
-
 import JSQWebViewController
 
+final class ViewController: UITableViewController {
 
-class ViewController: UITableViewController {
-
-    let url = NSURL(string: "http://jessesquires.com")!
+    let url = URL(string: "http://jessesquires.com")!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationController?.navigationBar.translucent = true
+        self.navigationController?.navigationBar.isTranslucent = true
     }
 
-    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        tableView.deselectRowAtIndexPath(indexPath, animated: true)
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
 
         if indexPath.row == 2 {
             return
@@ -45,16 +43,14 @@ class ViewController: UITableViewController {
 
         case 1:
             let nav = UINavigationController(rootViewController: webVC)
-            presentViewController(nav, animated: true, completion: nil)
+            present(nav, animated: true, completion: nil)
 
         default: break
         }
     }
 
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let webViewController = segue.destinationViewController as? WebViewController
-        webViewController?.urlRequest = NSURLRequest(URL: url)
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let webViewController = segue.destination as? WebViewController
+        webViewController?.urlRequest = URLRequest(url: url)
     }
-    
 }
-

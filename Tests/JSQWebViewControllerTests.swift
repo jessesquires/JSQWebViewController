@@ -35,7 +35,7 @@ final class JSQWebViewControllerTests: XCTestCase {
     }
 
     func test_thatWebViewController_InitializesSuccessfully() {
-        let webVC = WebViewController(url: NSURL(string: "http://jessesquires.com")!)
+        let webVC = WebViewController(url: URL(string: "http://jessesquires.com")!)
         XCTAssertNotNil(webVC);
 
         let nav = UINavigationController(rootViewController: webVC)
