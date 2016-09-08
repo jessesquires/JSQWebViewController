@@ -8,14 +8,14 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![screenshot](https://raw.githubusercontent.com/jessesquires/JSQWebViewController/develop/Screenshots/screenshot_1.png)
 
-> **NOTE:** As of iOS 9, this library is no longer necessary. 
+> **NOTE:** As of iOS 9, this library is no longer necessary.
 >
 > You should probably use [`SFSafariViewController`](https://developer.apple.com/library/prerelease/ios/documentation/SafariServices/Reference/SFSafariViewController_Ref/index.html) instead.
 
 ## Requirements
 
 * iOS 8+
-* Swift 2.2+
+* Swift 3.0+
 
 ## Installation
 
@@ -46,9 +46,9 @@ Read the [docs][docsLink]. Generated with [jazzy](https://github.com/realm/jazzy
 ````swift
 import JSQWebViewController
 
-let controller = WebViewController(url: NSURL(string: "http://jessesquires.com")!)
+let controller = WebViewController(url: URL(string: "http://jessesquires.com")!)
 let nav = UINavigationController(rootViewController: controller)
-presentViewController(nav, animated: true, completion: nil)
+present(nav, animated: true, completion: nil)
 ````
 
 See the included example app, open `JSQWebViewController.xcworkspace`.
