@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JSQWebViewController  Reference</title>
+    <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="css/highlight.css" />
+    <meta charset='utf-8'>
+    <script src="js/jquery.min.js" defer></script>
+    <script src="js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+    <a title="JSQWebViewController  Reference"></a>
+    <header>
+      <div class="content-wrapper">
+        <p><a href="index.html">JSQWebViewController Docs</a> (100% documented)</p>
+        <p class="header-right"><a href="https://github.com/jessesquires/JSQWebViewController"><img src="img/gh.png"/>View on GitHub</a></p>
+      </div>
+    </header>
+    <div class="content-wrapper">
+      <p id="breadcrumbs">
+        <a href="index.html">JSQWebViewController Reference</a>
+        <img id="carat" src="img/carat.png" />
+        JSQWebViewController  Reference
+      </p>
+    </div>
+    <div class="content-wrapper">
+      <nav class="sidebar">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a href="Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/WebViewController.html">WebViewController</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+        <section>
+          <section class="section">
+            
+            <a href='#jsqwebviewcontroller' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h1 id='jsqwebviewcontroller'>JSQWebViewController</h1>
+
+<p><a href="http://travis-ci.org/jessesquires/JSQWebViewController"><img src="https://secure.travis-ci.org/jessesquires/JSQWebViewController.svg" alt="Build Status"></a> <a href="https://cocoapods.org/pods/JSQWebViewController"><img src="https://img.shields.io/cocoapods/v/JSQWebViewController.svg" alt="Version Status"></a> <a href="http://opensource.org/licenses/MIT"><img src="https://img.shields.io/cocoapods/l/JSQWebViewController.svg" alt="license MIT"></a> <a href="https://codecov.io/gh/jessesquires/JSQWebViewController"><img src="https://codecov.io/gh/jessesquires/JSQWebViewController/branch/develop/graph/badge.svg" alt="codecov"></a> <a href="https://github.com/Carthage/Carthage"><img src="https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat" alt="Carthage compatible"></a> <a href="http://www.jessesquires.com/JSQWebViewController"><img src="https://img.shields.io/cocoapods/p/JSQWebViewController.svg" alt="Platform"></a></p>
+
+<p><em>A lightweight Swift WebKit view controller for iOS</em></p>
+
+<p><img src="https://raw.githubusercontent.com/jessesquires/JSQWebViewController/develop/Screenshots/screenshot_0.png" alt="screenshot">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="https://raw.githubusercontent.com/jessesquires/JSQWebViewController/develop/Screenshots/screenshot_1.png" alt="screenshot"></p>
+
+<blockquote>
+<p><strong>NOTE:</strong> As of iOS 9, this library is no longer necessary.</p>
+
+<p>You should probably use <a href="https://developer.apple.com/library/prerelease/ios/documentation/SafariServices/Reference/SFSafariViewController_Ref/index.html"><code>SFSafariViewController</code></a> instead.</p>
+</blockquote>
+<a href='#requirements' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='requirements'>Requirements</h2>
+
+<ul>
+<li>Swift 3.0</li>
+<li>Xcode 8</li>
+<li>iOS 8+</li>
+</ul>
+<a href='#installation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='installation'>Installation</h2>
+<a href='#a-href-http-cocoapods-org-cocoapods-a-recommended' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='a-href-http-cocoapods-org-cocoapods-a-recommended'><a href="http://cocoapods.org">CocoaPods</a> (recommended)</h4>
+<pre class="highlight ruby"><code><span class="n">use_frameworks!</span>
+
+<span class="c1"># For latest release in cocoapods</span>
+<span class="n">pod</span> <span class="s1">'JSQWebViewController'</span>
+
+<span class="c1"># Feeling adventurous? Get the latest on develop</span>
+<span class="n">pod</span> <span class="s1">'JSQWebViewController'</span><span class="p">,</span> <span class="ss">:git</span> <span class="o">=&gt;</span> <span class="s1">'https://github.com/jessesquires/JSQWebViewController.git'</span><span class="p">,</span> <span class="ss">:branch</span> <span class="o">=&gt;</span> <span class="s1">'develop'</span>
+</code></pre>
+<a href='#a-href-https-github-com-carthage-carthage-carthage-a' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='a-href-https-github-com-carthage-carthage-carthage-a'><a href="https://github.com/Carthage/Carthage">Carthage</a></h4>
+<pre class="highlight shell"><code>github <span class="s2">"jessesquires/JSQWebViewController"</span>
+</code></pre>
+<a href='#documentation' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='documentation'>Documentation</h2>
+
+<p>Read the <a href="http://www.jessesquires.com/JSQWebViewController">docs</a>. Generated with <a href="https://github.com/realm/jazzy">jazzy</a>. Hosted by <a href="https://pages.github.com">GitHub Pages</a>.</p>
+<a href='#generate' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='generate'>Generate</h4>
+<pre class="highlight shell"><code><span class="gp">$ </span>./build_docs.sh
+</code></pre>
+<a href='#preview' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h4 id='preview'>Preview</h4>
+<pre class="highlight shell"><code><span class="gp">$ </span>open index.html -a Safari
+</code></pre>
+<a href='#getting-started' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='getting-started'>Getting Started</h2>
+<pre class="highlight swift"><code><span class="kd">import</span> <span class="kt">JSQWebViewController</span>
+
+<span class="k">let</span> <span class="nv">controller</span> <span class="o">=</span> <span class="kt">WebViewController</span><span class="p">(</span><span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">(</span><span class="nv">string</span><span class="p">:</span> <span class="s">"http://jessesquires.com"</span><span class="p">)</span><span class="o">!</span><span class="p">)</span>
+<span class="k">let</span> <span class="nv">nav</span> <span class="o">=</span> <span class="kt">UINavigationController</span><span class="p">(</span><span class="nv">rootViewController</span><span class="p">:</span> <span class="n">controller</span><span class="p">)</span>
+<span class="nf">present</span><span class="p">(</span><span class="n">nav</span><span class="p">,</span> <span class="nv">animated</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span> <span class="nv">completion</span><span class="p">:</span> <span class="kc">nil</span><span class="p">)</span>
+</code></pre>
+
+<p>See the included example app, open <code>JSQWebViewController.xcworkspace</code>.</p>
+<a href='#contribute' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='contribute'>Contribute</h2>
+
+<p>Please follow these sweet <a href="https://github.com/jessesquires/HowToContribute">contribution guidelines</a>.</p>
+<a href='#credits' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='credits'>Credits</h2>
+
+<p>Created and maintained by <a href="https://twitter.com/jesse_squires"><strong>@jesse_squires</strong></a>.</p>
+<a href='#license' class='anchor' aria-hidden=true><span class="header-anchor"></span></a><h2 id='license'>License</h2>
+
+<p><code>JSQWebViewController</code> is released under an <a href="http://opensource.org/licenses/MIT">MIT License</a>. See <code>LICENSE</code> for details.</p>
+
+<blockquote>
+<p><strong>Copyright &copy; 2015 Jesse Squires.</strong></p>
+</blockquote>
+
+<p><em>Please provide attribution, it is greatly appreciated.</em></p>
+
+          </section>
+        </section>
+        <section id="footer">
+          <p>&copy; 2016 <a class="link" href="https://twitter.com/jesse_squires" target="_blank" rel="external">Jesse Squires</a>. All rights reserved. (Last updated: 2016-09-18)</p>
+          <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.2</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+        </section>
+      </article>
+    </div>
+  </body>
+</div>
+</html>
