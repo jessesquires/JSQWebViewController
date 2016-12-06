@@ -64,7 +64,7 @@ let nav = UINavigationController(rootViewController: controller)
 present(nav, animated: true, completion: nil)
 ````
 
-See the included example app, open `JSQWebViewController.xcworkspace`.
+See the included example app, open `Example/Example.xcodeproj`.
 
 ## Contribute
 

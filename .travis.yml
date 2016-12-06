@@ -1,6 +1,6 @@
 language: objective-c
 osx_image: xcode8.1
-   
+
 env:
    global:
    - LANG=en_US.UTF-8
@@ -9,6 +9,8 @@ env:
    - IOS_SCHEME="JSQWebViewController"
 
    - IOS_SDK=iphonesimulator10.1
+
+   - EXAMPLE="Example/Example.xcodeproj"
 
    matrix:
    - DESTINATION="OS=8.1,name=iPhone 4s"  SDK="$IOS_SDK" SCHEME="$IOS_SCHEME" RUN_TESTS="NO" BUILD_EXAMPLE="YES" POD_LINT="YES" RUN_UI_TESTS="NO"
@@ -33,7 +35,7 @@ script:
 
 
 - if [ $BUILD_EXAMPLE == "YES" ]; then
-      xcodebuild build analyze -project Example/Example.xcodeproj -scheme Example -sdk "$SDK" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO | xcpretty -c;
+      xcodebuild build analyze -project "$EXAMPLE" -scheme Example -sdk "$SDK" -destination "$DESTINATION" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO | xcpretty -c;
   fi
 
 
@@ -45,7 +47,7 @@ script:
 
 
 - if [ $RUN_UI_TESTS == "YES" ]; then
-      xcodebuild test -workspace JSQWebViewController.xcworkspace -scheme Example -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO | xcpretty -c;
+      xcodebuild test -project "$EXAMPLE" -scheme Example -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO | xcpretty -c;
   fi
 
 # Build for reporting test coverage
