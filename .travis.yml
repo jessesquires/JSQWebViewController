@@ -23,8 +23,8 @@ env:
    - DESTINATION="OS=9.2,name=iPhone 6s Plus" SDK="$IOS_SDK" SCHEME="$IOS_SCHEME" RUN_TESTS="YES" BUILD_EXAMPLE="NO"  POD_LINT="NO" RUN_UI_TESTS="NO"
    - DESTINATION="OS=9.3,name=iPad Pro"       SDK="$IOS_SDK" SCHEME="$IOS_SCHEME" RUN_TESTS="YES" BUILD_EXAMPLE="NO"  POD_LINT="NO" RUN_UI_TESTS="NO"
 
-   - DESTINATION="OS=10.0,name=iPhone 6s" SDK="$IOS_SDK" SCHEME="$IOS_SCHEME" RUN_TESTS="YES" BUILD_EXAMPLE="YES"  POD_LINT="NO" RUN_UI_TESTS="YES"
-   - DESTINATION="OS=10.1,name=iPhone 6s" SDK="$IOS_SDK" SCHEME="$IOS_SCHEME" RUN_TESTS="YES" BUILD_EXAMPLE="YES"  POD_LINT="NO" RUN_UI_TESTS="NO"
+   - DESTINATION="OS=10.0,name=iPhone 6s" SDK="$IOS_SDK" SCHEME="$IOS_SCHEME" RUN_TESTS="YES" BUILD_EXAMPLE="YES" POD_LINT="NO" RUN_UI_TESTS="NO"
+   - DESTINATION="OS=10.1,name=iPhone 6s" SDK="$IOS_SDK" SCHEME="$IOS_SCHEME" RUN_TESTS="YES" BUILD_EXAMPLE="YES" POD_LINT="NO" RUN_UI_TESTS="NO"
 
 script:
 - set -o pipefail
@@ -47,7 +47,7 @@ script:
 
 
 - if [ $RUN_UI_TESTS == "YES" ]; then
-      xcodebuild test -project "$EXAMPLE" -scheme Example -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO | xcpretty -c;
+      xcodebuild build test -project "$EXAMPLE" -scheme Example -sdk "$SDK" -destination "$DESTINATION" -configuration Debug ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO | xcpretty -c;
   fi
 
 # Build for reporting test coverage
