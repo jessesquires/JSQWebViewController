@@ -1,5 +1,5 @@
 language: objective-c
-osx_image: xcode8.1
+osx_image: xcode8.3
 
 env:
    global:
@@ -8,7 +8,7 @@ env:
    - PROJECT="JSQWebViewController.xcodeproj"
    - IOS_SCHEME="JSQWebViewController"
 
-   - IOS_SDK=iphonesimulator10.1
+   - IOS_SDK=iphonesimulator10.3
 
    - EXAMPLE="Example/Example.xcodeproj"
 
