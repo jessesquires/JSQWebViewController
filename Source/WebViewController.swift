@@ -222,5 +222,10 @@ open class WebViewController: UIViewController {
         let completed = webView.estimatedProgress == 1.0
         progressBar.setProgress(completed ? 0.0 : Float(webView.estimatedProgress), animated: !completed)
         UIApplication.shared.isNetworkActivityIndicatorVisible = !completed
+        webView.evaluateJavaScript("document.title", completionHandler: { (data:Any?, error:Error?) in
+            if let title = data as? String{
+                self.title = title
+            }
+        })
     }
 }
