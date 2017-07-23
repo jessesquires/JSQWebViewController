@@ -83,5 +83,5 @@ Created and maintained by [**@jesse_squires**](https://twitter.com/jesse_squires
 *Please provide attribution, it is greatly appreciated.*
 
 [mitLink]:http://opensource.org/licenses/MIT
-[docsLink]:http://www.jessesquires.com/JSQWebViewController
+[docsLink]:http://jessesquires.github.io/JSQWebViewController
 [podLink]:https://cocoapods.org/pods/JSQWebViewController
