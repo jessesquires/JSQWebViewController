@@ -4,7 +4,7 @@
 //
 //
 //  Documentation
-//  http://www.jessesquires.com/JSQWebViewController
+//  http://jessesquires.github.io/JSQWebViewController
 //
 //
 //  GitHub
