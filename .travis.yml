@@ -8,7 +8,7 @@ env:
    - PROJECT="JSQWebViewController.xcodeproj"
    - IOS_SCHEME="JSQWebViewController"
 
-   - IOS_SDK=iphonesimulator10.1
+   - IOS_SDK=iphonesimulator10.3
 
    - EXAMPLE="Example/Example.xcodeproj"
 
@@ -25,6 +25,8 @@ env:
 
    - DESTINATION="OS=10.0,name=iPhone 6s" SDK="$IOS_SDK" SCHEME="$IOS_SCHEME" RUN_TESTS="YES" BUILD_EXAMPLE="YES" POD_LINT="NO" RUN_UI_TESTS="NO"
    - DESTINATION="OS=10.1,name=iPhone 6s" SDK="$IOS_SDK" SCHEME="$IOS_SCHEME" RUN_TESTS="YES" BUILD_EXAMPLE="YES" POD_LINT="NO" RUN_UI_TESTS="NO"
+   - DESTINATION="OS=10.2,name=iPad Air"  SDK="$IOS_SDK" SCHEME="$IOS_SCHEME" RUN_TESTS="YES" BUILD_EXAMPLE="YES" POD_LINT="NO" RUN_UI_TESTS="NO"
+   - DESTINATION="OS=10.3,name=iPhone 7"  SDK="$IOS_SDK" SCHEME="$IOS_SCHEME" RUN_TESTS="YES" BUILD_EXAMPLE="YES" POD_LINT="NO" RUN_UI_TESTS="NO"
 
 script:
 - set -o pipefail
