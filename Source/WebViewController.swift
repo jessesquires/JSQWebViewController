@@ -161,7 +161,10 @@ open class WebViewController: UIViewController {
         super.viewDidLayoutSubviews()
         webView.frame = view.bounds
 
-        let insets = UIEdgeInsets(top: topLayoutGuide.length, left: 0, bottom: 0, right: 0)
+        let isIOS11 = ProcessInfo.processInfo.isOperatingSystemAtLeast(
+            OperatingSystemVersion(majorVersion: 11, minorVersion: 0, patchVersion: 0))
+        let top = isIOS11 ? CGFloat(0.0) : topLayoutGuide.length
+        let insets = UIEdgeInsets(top: top, left: 0, bottom: 0, right: 0)
         webView.scrollView.contentInset = insets
         webView.scrollView.scrollIndicatorInsets = insets
 
