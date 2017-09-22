@@ -8,7 +8,7 @@ env:
    - PROJECT="JSQWebViewController.xcodeproj"
    - IOS_SCHEME="JSQWebViewController"
 
-   - IOS_SDK=iphonesimulator10.3
+   - IOS_SDK=iphonesimulator11.0
 
    - EXAMPLE="Example/Example.xcodeproj"
 
