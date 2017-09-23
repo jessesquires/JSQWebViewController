@@ -1,3 +1,11 @@
+[![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
+
+> **NOTE:** As of iOS 9, this library is no longer necessary.
+>
+> You should use [`SFSafariViewController`](https://developer.apple.com/library/prerelease/ios/documentation/SafariServices/Reference/SFSafariViewController_Ref/index.html) instead.
+
+# :warning: Deprecated :warning:
+
 # JSQWebViewController
 
 [![Build Status](https://secure.travis-ci.org/jessesquires/JSQWebViewController.svg)](http://travis-ci.org/jessesquires/JSQWebViewController) [![Version Status](https://img.shields.io/cocoapods/v/JSQWebViewController.svg)][podLink] [![license MIT](https://img.shields.io/cocoapods/l/JSQWebViewController.svg)][mitLink] [![codecov](https://codecov.io/gh/jessesquires/JSQWebViewController/branch/develop/graph/badge.svg)](https://codecov.io/gh/jessesquires/JSQWebViewController) [![Carthage compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage) [![Platform](https://img.shields.io/cocoapods/p/JSQWebViewController.svg)][docsLink]
@@ -7,10 +15,6 @@
 ![screenshot](https://raw.githubusercontent.com/jessesquires/JSQWebViewController/develop/Screenshots/screenshot_0.png)
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 ![screenshot](https://raw.githubusercontent.com/jessesquires/JSQWebViewController/develop/Screenshots/screenshot_1.png)
-
-> **NOTE:** As of iOS 9, this library is no longer necessary.
->
-> You should probably use [`SFSafariViewController`](https://developer.apple.com/library/prerelease/ios/documentation/SafariServices/Reference/SFSafariViewController_Ref/index.html) instead.
 
 ## Requirements
 
