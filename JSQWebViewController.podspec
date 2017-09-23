@@ -17,4 +17,5 @@ Pod::Spec.new do |s|
 
    s.frameworks = 'WebKit'
    s.requires_arc = true
+   s.deprecated = true
 end
