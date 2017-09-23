@@ -61,16 +61,8 @@ open class WebViewController: UIViewController {
     private final let configuration: WKWebViewConfiguration
     private final let activities: [UIActivity]?
 
-    private lazy final var _webView: WKWebView = { [unowned self] in
-        // FIXME: prevent Swift bug, lazy property initialized twice from `init(coder:)`
-        // return existing webView if webView already added
-        let views = self.view.subviews.filter {$0 is WKWebView } as! [WKWebView]
-        if views.count != 0 {
-            return views.first!
-        }
-
-        let webView = WKWebView(frame: CGRect.zero, configuration: self.configuration)
-        self.view.addSubview(webView)
+    private lazy final var _webView: WKWebView = {
+        let webView = WKWebView(frame: CGRect.zero, configuration: configuration)
         webView.addObserver(self, forKeyPath: titleKeyPath, options: .new, context: nil)
         webView.addObserver(self, forKeyPath: estimatedProgressKeyPath, options: .new, context: nil)
         webView.allowsBackForwardNavigationGestures = true
@@ -78,15 +70,14 @@ open class WebViewController: UIViewController {
             webView.allowsLinkPreview = true
         }
         return webView
-        }()
+    }()
 
-    private lazy final var _progressBar: UIProgressView = { [unowned self] in
+    private lazy final var _progressBar: UIProgressView = {
         let progressBar = UIProgressView(progressViewStyle: .bar)
         progressBar.backgroundColor = .clear
         progressBar.trackTintColor = .clear
-        self.view.addSubview(progressBar)
         return progressBar
-        }()
+    }()
 
     // MARK: Initialization
 
@@ -137,6 +128,8 @@ open class WebViewController: UIViewController {
     open override func viewDidLoad() {
         super.viewDidLoad()
         title = urlRequest.url?.host
+        view.addSubview(_webView)
+        view.addSubview(_progressBar)
 
         if presentingViewController?.presentedViewController != nil {
             navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done,
@@ -168,7 +161,10 @@ open class WebViewController: UIViewController {
         super.viewDidLayoutSubviews()
         webView.frame = view.bounds
 
-        let insets = UIEdgeInsets(top: topLayoutGuide.length, left: 0, bottom: 0, right: 0)
+        let isIOS11 = ProcessInfo.processInfo.isOperatingSystemAtLeast(
+            OperatingSystemVersion(majorVersion: 11, minorVersion: 0, patchVersion: 0))
+        let top = isIOS11 ? CGFloat(0.0) : topLayoutGuide.length
+        let insets = UIEdgeInsets(top: top, left: 0, bottom: 0, right: 0)
         webView.scrollView.contentInset = insets
         webView.scrollView.scrollIndicatorInsets = insets
 
