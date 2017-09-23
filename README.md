@@ -1,10 +1,11 @@
+
 [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
 
 > **NOTE:** As of iOS 9, this library is no longer necessary.
 >
 > You should use [`SFSafariViewController`](https://developer.apple.com/library/prerelease/ios/documentation/SafariServices/Reference/SFSafariViewController_Ref/index.html) instead.
 
-# :warning: Deprecated :warning:
+# ⚠ Deprecated ⚠
 
 # JSQWebViewController
 
