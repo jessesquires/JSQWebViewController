@@ -18,8 +18,8 @@
 
 ## Requirements
 
-* Swift 3.0
-* Xcode 8
+* Swift 3.2+
+* Xcode 9+
 * iOS 8+
 
 ## Installation
@@ -31,9 +31,6 @@ use_frameworks!
 
 # For latest release in cocoapods
 pod 'JSQWebViewController'
-
-# Feeling adventurous? Get the latest on develop
-pod 'JSQWebViewController', :git => 'https://github.com/jessesquires/JSQWebViewController.git', :branch => 'develop'
 ````
 
 #### [Carthage](https://github.com/Carthage/Carthage)
