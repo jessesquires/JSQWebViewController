@@ -4,6 +4,12 @@ The changelog for `JSQWebViewController`. Also see the [releases](https://github
 
 --------------------------------------
 
+6.0.0
+-----
+
+- Swift 4
+- Official deprecation
+
 5.0.0
 -----
 
