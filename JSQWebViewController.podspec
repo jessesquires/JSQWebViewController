@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
 
    s.summary = 'A lightweight Swift WebKit view controller for iOS'
    s.homepage = 'https://github.com/jessesquires/JSQWebViewController'
-   s.documentation_url = 'http://jessesquires.com/JSQWebViewController'
+   s.documentation_url = 'https://jessesquires.github.io/JSQWebViewController'
 
    s.social_media_url = 'https://twitter.com/jesse_squires'
    s.authors = 'Jesse Squires'
