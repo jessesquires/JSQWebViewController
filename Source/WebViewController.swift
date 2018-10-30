@@ -168,7 +168,7 @@ open class WebViewController: UIViewController {
         webView.scrollView.contentInset = insets
         webView.scrollView.scrollIndicatorInsets = insets
 
-        view.bringSubview(toFront: progressBar)
+        view.bringSubviewToFront(progressBar)
         progressBar.frame = CGRect(x: view.frame.minX,
                                    y: topLayoutGuide.length,
                                    width: view.frame.size.width,
